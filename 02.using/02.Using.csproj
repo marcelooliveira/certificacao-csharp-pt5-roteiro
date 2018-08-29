@@ -6,4 +6,14 @@
     <RootNamespace>_02.Using</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ex1.md" />
+    <None Remove="ex2.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="ex1.md" />
+    <Compile Include="ex2.md" />
+  </ItemGroup>
+
 </Project>
