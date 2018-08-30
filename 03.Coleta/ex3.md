@@ -1,14 +1,54 @@
-﻿How should you complete the relevant code?
-==========================================
+﻿Você está criando uma classe chamada `Data`, que inclui um dicionário chamado `data`. 
+Você precisa permitir que o coletor de lixo colete as referências do objeto `data`.
+Como você completaria as lacunas abaixo? 
 
-DRAG DROP\
-You are creating a class named Data that includes a dictionary object named _data.\
-You need to allow the garbage collection process to collect the references of the _data\
-object.\
-How should you complete the relevant code? (To answer, drag the appropriate code\
-segments to the correct locations in the answer area. Each code segment may be used\
-once, more than once, or not at all. You may need to drag the split bar between panes or\
-scroll to view content.)\
-[![](https://cdn.briefmenow.org/wp-content/uploads/70-483-v2/142.jpg)](https://cdn.briefmenow.org/wp-content/uploads/70-483-v2/142.jpg)
 
-Answer: [![](https://cdn.briefmenow.org/wp-content/uploads/70-483-v2/143.jpg)](https://cdn.briefmenow.org/wp-content/uploads/70-483-v2/143.jpg)
+**Opções disponíveis:**
+
+```
+static Dictionary<int, WeakReference> _data = new Dictionary<int, WeakReference>();
+static Dictionary<int, int> _data = new Dictionary<int, int>();
+_data.Add(i, new WeakReference(new Class(i * 2), false));
+_data.Add(i, (Int32)(i * 2));
+```
+
+**código incompleto:**
+
+```
+public class Data
+{
+	[LACUNA 1]
+	public Data(int count)
+	{
+		for (int i = 0; i < count; i++)
+		{
+			[LACUNA 2]
+		}
+	}
+}
+	
+public class MinhaClasse
+{
+	private readonly int numero;
+	public MinhaClasse(int numero)
+	{
+		this.numero = numero;
+	}
+}
+```
+
+**Resposta:**
+
+```
+public class Data
+{
+	static Dictionary<int, WeakReference> _data = new Dictionary<int, WeakReference>();
+	public Data(int count)
+	{
+		for (int i = 0; i < count; i++)
+		{
+			_data.Add(i, new WeakReference(new MinhaClasse(i * 2), false));
+		}
+	}
+}
+```
