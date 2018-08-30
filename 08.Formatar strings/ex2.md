@@ -16,7 +16,14 @@ Display the number of coins without leading zeros if the number is 1 or greater.
 Display the number of coins as a single 0 if the number is 0.\
 You need to ensure that the method meets the requirements.\
 Which code segment should you insert at line 03?\
-[![](https://cdn.briefmenow.org/wp-content/uploads/70-483-v2/192.jpg)](https://cdn.briefmenow.org/wp-content/uploads/70-483-v2/192.jpg)
+
+```
+A return String.Format("Player {0}, collected {1} coins", name, coins.ToString("###0"));
+B. return String.Format("Player {0} collected {1:000#} coins.", name, coins);
+C. return String.Format("Player {name} collected {coins.ToString('000')} coins");
+D. return String.Format("Player {1} collected {2:D3} coins.", name, coins);
+5. 
+```
 
 A.\
 Option A
