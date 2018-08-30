@@ -1,12 +1,8 @@
-﻿Which four code segments should you use in sequence?
-====================================================
-
-
-You are developing an application by using C#. The application will output the text string\
-"First Line" followed by the text string "Second Line".\
-You need to ensure that an empty line separates the text strings.\
-Which four code segments should you use in sequence? (To answer, move the appropriate\
-code segments to the answer area and arrange them in the correct order.)\
+﻿Você está desenvolvendo um aplicativo usando C#. A aplicação irá produzir
+a string de texto "Primeira linha" seguido da string "Segunda linha".
+Você precisa garantir que uma linha vazia separe as strings de texto.
+Quais quatro segmentos de código você deve usar em seqüência? (Para responder, mova o apropriado
+segmentos de código para a área de resposta e organizá-los na ordem correta.
 
 ```
 sb.Append("\1");
@@ -18,35 +14,41 @@ sb.Append(String.Empty);
 sb.Append("Second Line");
 ```
 
-Answer: See the explanation.
+Resposta:
 
-> Explanation:\
-> Box 1:\
+> Lacuna 1:
 > 
 ```
 var sb = new StringBuilder();
 ```
 >
-> First we create the variable.\
-> Box 2:\
+> Primeiro criamos a variável
+
+
+> Lacuna 2:
 ```
 sb.Append("First Line");
 > 
 ```
 >
-> We create the first text line.\
-> Box 3:\
+>Criamos a primeira lina de texto
+
+
+> Lacuna 3:
 ```
 sb.AppendLine();
 > 
 ```
 >
-> We add a blank line.\
-> The StringBuilder.AppendLine method appends the default line terminator to the end of the\
-> current StringBuilder object.\
-> Box 4:\
+> Adicionamos uma linha em branco.
+> O método StringBuilder.AppendLine acrescenta o terminador de linha padrão ao final
+> do objeto StringBuilder.
+
+
+
+> Lacuna 4:
 ```
 sb.Append("Second Line");
 > 
 ```
-> Finally we add the second line.
+> E no final adicionamos a segunda linha.

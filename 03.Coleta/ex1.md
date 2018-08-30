@@ -1,20 +1,19 @@
-﻿Which garbage collector method should you use?
-==============================================
+﻿Você está desenvolvendo um aplicativo usando C#.
 
-You are developing an application by using C#.\
-The application includes an object that performs a long running process.\
-You need to ensure that the garbage collector does not release the object's resources until\
-the process completes.\
-Which garbage collector method should you use?
+O aplicativo inclui um objeto que executa um processo de longa execução.
+Você precisa garantir que o coletor de lixo não libere os recursos do objeto até que
+o processo seja concluído.
+Qual método do coletor de lixo você deve usar?
 
-A.\
+
+A.
 WaitForFullGCComplete()
 
-B.\
+B.
 SuppressFinalize()
 
-C.\
+C.
 collect()
 
-D.\
+D.
 RemoveMemoryPressure()
