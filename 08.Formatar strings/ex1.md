@@ -1,8 +1,6 @@
 ﻿Which code should you insert at line 04?
 ========================================
 
-[seenagape](https://www.briefmenow.org/microsoft/author/seenagape/ "View all posts by seenagape")[December 9, 2014](https://www.briefmenow.org/microsoft/which-code-should-you-insert-at-line-04/ "Permalink to Which code should you insert at line 04?")
-
 HOTSPOT\
 You are developing an application in C#.\
 The application will display the temperature and the time at which the temperature was\

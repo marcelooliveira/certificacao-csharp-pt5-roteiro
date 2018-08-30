@@ -1,5 +1,5 @@
 ﻿(Line numbers are included for reference only.) 01 publ…
-seenagapeMay 25, 2017
+
 You are developing an application that will convert data into multiple output formats. The application includes
 the following code. (Line numbers are included for reference only.)
 ```

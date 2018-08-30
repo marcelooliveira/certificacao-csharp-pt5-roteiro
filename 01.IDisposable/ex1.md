@@ -1,7 +1,6 @@
 ﻿Which two interfaces should you implement?
 ==========================================
 
-[seenagape](https://www.briefmenow.org/microsoft/author/seenagape/ "View all posts by seenagape")[December 9, 2014](https://www.briefmenow.org/microsoft/which-two-interfaces-should-you-implement/ "Permalink to Which two interfaces should you implement?")
 
 You are modifying an existing application that manages employee payroll. The application\
 includes a class named PayrollProcessor. The PayrollProcessor class connects to a payroll\

@@ -1,8 +1,6 @@
 ﻿Which four code segments should you use in sequence?
 ====================================================
 
-[seenagape](https://www.briefmenow.org/microsoft/author/seenagape/ "View all posts by seenagape")[December 9, 2014](https://www.briefmenow.org/microsoft/which-four-code-segments-should-you-use-in-sequence-2/ "Permalink to Which four code segments should you use in sequence?")
-
 DRAG DROP\
 You are developing an application by using C#. The application will output the text string\
 "First Line" followed by the text string "Second Line".\
