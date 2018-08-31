@@ -30,7 +30,9 @@ namespace _01.idisposable
             // Chama Dispose() e informa que a chamada
             //foi feita durante o descarte do objeto
             Descartar(true);
-            //Solicita que o common language runtime não chame o 
+
+            //Já estamos finalizando manualmente, portanto
+            //solicita que o common language runtime não chame o 
             //finalizador para o objeto especificado
             GC.SuppressFinalize(this);
         }
