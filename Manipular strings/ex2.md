@@ -1,10 +1,7 @@
-﻿Which object type should you use?
+﻿Você está desenvolvendo um aplicativo que analisa uma grande quantidade de texto.
+Você precisa analisar o texto em linhas separadas e minimizar o uso de memória ao processar dados.
+Qual tipo de objeto você deve usar?
 
-You are developing an application that will parse a large amount of text.
-You need to parse the text into separate lines and minimize memory use while processing data.
-Which object type should you use?
-
-PrepAway - Latest Free Exam Questions & Answers
 A.
 DataContractSerializer
 

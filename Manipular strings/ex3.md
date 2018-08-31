@@ -1,73 +1,82 @@
-﻿(Line numbers are included for reference only.) 01 publ…
+﻿Você está desenvolvendo um aplicativo que converterá dados em vários formatos de saída. 
+A aplicação inclui o seguinte código.
+(Os números de linha são incluídos apenas para referência.)
 
-You are developing an application that will convert data into multiple output formats. The application includes
-the following code. (Line numbers are included for reference only.)
 ```
-01 public class TabDelimitedFormatter : IOutputFormatter<string>
+01 public class Formatador : IFormatadorDeSaida<string>
 02 {
-03 readonly Func<int, char> suffix = col => col % 2 == 0 ? ‘\\n’ : ‘\\t’;
-04 public string GetOutput(IEnumerator<string> iterator, int recordSize)
-05 {
-06
-07 }
+03     readonly Func<int, char> sufixo = col => col % 2 == 0 ? '\n' : '\t';
+04     public string GetSaida(IEnumerator<string> iterador, int tamanhoRegistro)
+05     {
+06 
+07     }
 08 }
-You are developing a code segment that will produce tab-delimited output. All output routines implement the
 ```
-following interface:
-You need to minimize the completion time of the GetOutput() method. Which code segment should youinsert at line 06?
 
-PrepAway - Latest Free Exam Questions & Answers
+Você está desenvolvendo um segmento que irá produzir strings delimitadas por tabs. Todas as rotinas de saída
+implementam a seguinte interface:
+
+```
+public interface IFormatadorDeSaida<T>
+{
+    string GetSaida(IEnumerator<T> iterador, int tamanhoRegistro);
+}
+```
+
+Você precisa minimizar o tempo de execução do método `GetSaida()`. Qual dos seguintes segmentos de código você deveria inserir na linha 06?
+
 A.
 ```
-string output = null; 
-for (int i = 1; iterator.MoveNext(); i++) 
+string saida = null; 
+for (int i = 1; iterador.MoveNext(); i++) 
 { 
-output = string.Concat(output, iterator.Current, suffix(i)); 
+    saida = string.Concat(saida, iterador.Current, suffix(i)); 
 } 
-return output;
+return saida;
 ```
 
 B.
 ```
-var output = new StringBuilder(); 
-for (int i = 1; iterator.MoveNext(); i++) 
+var saida = new StringBuilder(); 
+for (int i = 1; iterador.MoveNext(); i++) 
 { 
-output.Append(iterator.Current); 
-output.Append(suffix(i)); 
+    saida.Append(iterador.Current); 
+    saida.Append(suffix(i)); 
 } 
-return output.ToString();
+return saida.ToString();
 ```
 
 C.
 ```
-string output = null; 
-for (int i = 1; iterator.MoveNext(); i++) 
+string saida = null; 
+for (int i = 1; iterador.MoveNext(); i++) 
 { 
-output = output + iterator.Current + suffix(i); 
+    saida = saida + iterador.Current + suffix(i); 
 } 
-return output;
+return saida;
 ```
 
 D.
 ```
-string output = null; 
-for (int i = 1; iterator.MoveNext(); i++) 
+string saida = null; 
+for (int i = 1; iterador.MoveNext(); i++) 
 { 
-output += iterator.Current + suffix(i); 
+    saida += iterador.Current + suffix(i); 
 } 
-return output;
+return saida;
 ```
 
-> Explanation:
-> A String object concatenation operation always creates a new object from the existing string and the new data.
-> A StringBuilder object maintains a buffer to accommodate the concatenation of new data. New data is
-> appended to the buffer if room is available; otherwise, a new, larger buffer is allocated, data from the original
-> buffer is copied to the new buffer, and the new data is then appended to the new buffer.
-> The performance of a concatenation operation for a String or StringBuilder object depends on the frequency of
-> memory allocations. A String concatenation operation always allocates memory, whereas a StringBuilder
-> concatenation operation allocates memory only if the StringBuilder object buffer is too small to accommodate
-> the new data. Use the String class if you are concatenating a fixed number of String objects. In that case, the
-> compiler may even combine individual concatenation operations into a single operation. Use a StringBuilder
-> object if you are concatenating an arbitrary number of strings; for example, if you’re using a loop to concatenate
-> a random number of strings of user input.
-> http://msdn.microsoft.com/en-us/library/system.text.stringbuilder(v=vs.110).aspx
+> B. (CORRETA)
+
+Sempre que você concatena um objeto string ocorre uma alocação de memória, pois um novo objeto é criado na concatenação.
+
+A classe `StringBuilder` possui um buffer interno que vai concatenando realmente os dados, sem criar novos objetos.
+Quando o espaço desse buffer se esgota, um novo buffer maior é alocado, e então os dados do buffer antigo são copiados para o novo.
+
+**Portanto...**
+
+Use a classe String se você estiver concatenando um número pequeno e fixo de objetos String.
+Dependendo da situação, o compilador pode otimizar o processo, juntando as operações de concatenação individuais em uma única operação.
+
+Use um `StringBuilder` se você estiver concatenando um número indefinido de strings;
+por exemplo, se você estiver usando um loop para concatenar strings lidas a partir de um arquivo.
