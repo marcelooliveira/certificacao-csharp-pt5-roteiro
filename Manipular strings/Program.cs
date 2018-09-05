@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Manipular_strings
@@ -8,7 +9,23 @@ namespace Manipular_strings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //string materias = "";
+            //materias = materias + "Português";
+            //Console.WriteLine(materias);
+            //materias = materias + ", Matemática";
+            //Console.WriteLine(materias);
+            //materias = materias + ", Geografia";
+            //Console.WriteLine(materias);
+
+            StringBuilder builder = new StringBuilder();
+            builder.Append("Português");
+            Console.WriteLine(builder);
+            builder.Append(", Matemática");
+            Console.WriteLine(builder);
+            builder.Append(", Geografia");
+            Console.WriteLine(builder);
+
+            Console.ReadKey();
         }
     }
 
