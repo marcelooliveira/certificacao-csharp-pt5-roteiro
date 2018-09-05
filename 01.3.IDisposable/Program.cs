@@ -16,7 +16,7 @@ namespace _01._3.IDisposable
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMensagem());
+            Application.Run(new FrmMensagem());
         }
     }
 }

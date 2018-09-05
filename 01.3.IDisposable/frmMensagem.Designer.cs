@@ -4,7 +4,7 @@ using System.Windows.Interop;
 
 namespace _01._3.IDisposable
 {
-    partial class frmMensagem
+    partial class FrmMensagem
     {
         /// <summary>
         /// Required designer variable.

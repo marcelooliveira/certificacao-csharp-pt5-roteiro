@@ -12,9 +12,9 @@ using System.Windows.Interop;
 
 namespace _01._3.IDisposable
 {
-    public partial class frmMensagem : Form
+    public partial class FrmMensagem : Form
     {
-        public frmMensagem()
+        public FrmMensagem()
         {
             InitializeComponent();
 

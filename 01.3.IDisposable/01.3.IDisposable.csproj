@@ -50,17 +50,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmMensagem.cs">
+    <Compile Include="FrmMensagem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMensagem.Designer.cs">
-      <DependentUpon>frmMensagem.cs</DependentUpon>
+    <Compile Include="FrmMensagem.Designer.cs">
+      <DependentUpon>FrmMensagem.cs</DependentUpon>
     </Compile>
     <Compile Include="MensageiroNotepad.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmMensagem.resx">
-      <DependentUpon>frmMensagem.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMensagem.resx">
+      <DependentUpon>FrmMensagem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
