@@ -47,4 +47,4 @@ Com essa alteração, a variável `gpsVeiculo` vai deixar de ser coletada pelo c
 
 Resposta:
 Sim. Os tipos de valor (incluindo `structs`) são normalmente armazenados na pilha (Stack).
-Quando um programa sai de um bloco de código, as variáveis daquele bloco que estão na pilha (Stack) são automaticamente removidas.
+Quando a execução de um programa sai de um bloco de código, as variáveis daquele bloco que estão na pilha (Stack) são automaticamente removidas.

@@ -3,41 +3,47 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.IDisposable", "01.IDisposable\01.IDisposable.csproj", "{70A21C9B-64E5-4D53-B196-DA1CCE761C2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.2.IDisposable", "01.IDisposable\01.2.IDisposable.csproj", "{70A21C9B-64E5-4D53-B196-DA1CCE761C2A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01", "01", "{D5AC5DB7-9B63-46D2-9EC7-A7DE3FCCC113}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02", "02", "{8376376F-7A9A-4F30-8B02-2F053FD0FEA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Using", "02.using\02.Using.csproj", "{A16469E9-A9AD-4238-BA1A-84E380134B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.Using", "02.using\02.Using.csproj", "{A16469E9-A9AD-4238-BA1A-84E380134B62}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03", "03", "{C25FD5F2-4328-41CB-9BAC-4700087EC70C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Coleta", "03.Coleta\03.Coleta.csproj", "{90A9856A-0035-458A-B39D-963F17FB9189}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Coleta", "03.Coleta\03.Coleta.csproj", "{90A9856A-0035-458A-B39D-963F17FB9189}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04", "04", "{EED5C724-58DE-40BD-9B77-A1729C228638}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Nao gerenciado", "04.Nao gerenciado\04.Nao gerenciado.csproj", "{71C65B28-BC31-448E-A1DA-E5A72026EF4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.Nao gerenciado", "04.Nao gerenciado\04.Nao gerenciado.csproj", "{71C65B28-BC31-448E-A1DA-E5A72026EF4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05", "05", "{EBA99994-147D-4BF9-A455-1FCA9EBE9A25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manipular strings", "Manipular strings\Manipular strings.csproj", "{31EE9B6C-6DFE-4F16-83DC-3B93CF790C22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manipular strings", "Manipular strings\Manipular strings.csproj", "{31EE9B6C-6DFE-4F16-83DC-3B93CF790C22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06", "06", "{79B5FF9B-7639-4814-9137-7D31695F0CD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Pesquisar strings", "06.Pesquisar strings\06.Pesquisar strings.csproj", "{A0457FC9-1B8E-4054-AC8D-AE7C24FD63D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Pesquisar strings", "06.Pesquisar strings\06.Pesquisar strings.csproj", "{A0457FC9-1B8E-4054-AC8D-AE7C24FD63D8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07", "07", "{CA58ACAE-5E0A-4030-8F96-9CA6BA1B1B6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Enumerar strings", "07.Enumerar strings\07.Enumerar strings.csproj", "{0871EEC6-A332-48CB-9691-C82EF9A0F4F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.Enumerar strings", "07.Enumerar strings\07.Enumerar strings.csproj", "{0871EEC6-A332-48CB-9691-C82EF9A0F4F5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08", "08", "{37D68037-6EBE-41EA-A247-C294C04A0A7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Formatar strings", "08.Formatar strings\08.Formatar strings.csproj", "{06BE870E-91CB-4BEB-977A-8F37F1F7E52A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.Formatar strings", "08.Formatar strings\08.Formatar strings.csproj", "{06BE870E-91CB-4BEB-977A-8F37F1F7E52A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09", "09", "{E19C739B-B9E3-402F-A805-088537BD48D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.Interpolacao de strings", "09.Interpolacao de strings\09.Interpolacao de strings.csproj", "{4AB6ACDB-188D-4146-A5AC-8BFDD9739144}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.Interpolacao de strings", "09.Interpolacao de strings\09.Interpolacao de strings.csproj", "{4AB6ACDB-188D-4146-A5AC-8BFDD9739144}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.1.Finalizador", "01.1.Finalizador\01.1.Finalizador.csproj", "{1269A687-A995-4800-BFE0-D5D698500FA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.1.TiposDeValor", "03.1.StackContainer\03.1.TiposDeValor.csproj", "{AEE2A4B8-8237-4524-A623-AC70C36F8BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.3.IDisposable", "01.3.IDisposable\01.3.IDisposable.csproj", "{CF5CA9CD-6720-4741-8800-460DEBF5A6DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +87,18 @@ Global
 		{4AB6ACDB-188D-4146-A5AC-8BFDD9739144}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AB6ACDB-188D-4146-A5AC-8BFDD9739144}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AB6ACDB-188D-4146-A5AC-8BFDD9739144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1269A687-A995-4800-BFE0-D5D698500FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1269A687-A995-4800-BFE0-D5D698500FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1269A687-A995-4800-BFE0-D5D698500FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1269A687-A995-4800-BFE0-D5D698500FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE2A4B8-8237-4524-A623-AC70C36F8BA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE2A4B8-8237-4524-A623-AC70C36F8BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE2A4B8-8237-4524-A623-AC70C36F8BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE2A4B8-8237-4524-A623-AC70C36F8BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF5CA9CD-6720-4741-8800-460DEBF5A6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF5CA9CD-6720-4741-8800-460DEBF5A6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF5CA9CD-6720-4741-8800-460DEBF5A6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF5CA9CD-6720-4741-8800-460DEBF5A6DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +113,9 @@ Global
 		{0871EEC6-A332-48CB-9691-C82EF9A0F4F5} = {CA58ACAE-5E0A-4030-8F96-9CA6BA1B1B6F}
 		{06BE870E-91CB-4BEB-977A-8F37F1F7E52A} = {37D68037-6EBE-41EA-A247-C294C04A0A7F}
 		{4AB6ACDB-188D-4146-A5AC-8BFDD9739144} = {E19C739B-B9E3-402F-A805-088537BD48D4}
+		{1269A687-A995-4800-BFE0-D5D698500FA2} = {D5AC5DB7-9B63-46D2-9EC7-A7DE3FCCC113}
+		{AEE2A4B8-8237-4524-A623-AC70C36F8BA2} = {C25FD5F2-4328-41CB-9BAC-4700087EC70C}
+		{CF5CA9CD-6720-4741-8800-460DEBF5A6DF} = {D5AC5DB7-9B63-46D2-9EC7-A7DE3FCCC113}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A31D3EC9-D7C1-466F-AF9D-B80109253D4E}

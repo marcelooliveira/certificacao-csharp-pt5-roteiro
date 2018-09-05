@@ -7,6 +7,6 @@ Com isso, a pilha cresce de tamanho. Conforme a aplicação roda, o programa vai
 Pense e responda: o coletor de lixo também coleta esse lixo da pilha?
 
 
-Reposta:
+**Reposta**:
 
 Não. A pilha cresce e se "contrai" conforme o programa é executado: Esse "lixo" gerado pela pilha é destruído assim que cada bloco termina de ser executado.

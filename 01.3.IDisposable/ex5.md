@@ -1,9 +1,9 @@
 ﻿# Markdown file
 
 
-4. É possível que um finalizador seja chamado antes do método `Dispose` em um objeto?
+É possível que um finalizador seja chamado antes do método `Dispose` em um objeto?
 
-4. Sim. É de responsabilidade do desenvolvedor do aplicativo
+Sim. É de responsabilidade do desenvolvedor do aplicativo
 se certificar de que o método `Dispose` seja chamado para solicitar 
 a liberação  de quaisquer recursos que o objeto
 esteja usando. Se isso não

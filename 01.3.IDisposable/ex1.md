@@ -24,12 +24,6 @@ D.
 IComparable
 
 > Explicação:
-> B: IEnumerable
-> C: IDisposable
-Exposes an enumerator, which supports a simple iteration over a non-generic collection.\
-Defines a method to release allocated resources.\
-The primary use of this interface is to release unmanaged resources.
-
 `IEnumerable` expõe um enumerador, que suporta uma iteração simples sobre uma coleção não genérica.
 `IDisposable` define um método para liberar recursos alocados.
 O principal uso dessa interface é liberar recursos não gerenciados, tais como conexões com bancos de dados.

@@ -18,8 +18,7 @@ namespace _01.idisposable
     class ResourceHolder : IDisposable
     {
         // Indica quando um objeto foi descartado
-        bool descartado = false;
-
+        bool disposed = false;
 
         /// <summary>
         /// Executa tarefas definidas pelo aplicativo associadas à liberação,
@@ -29,7 +28,7 @@ namespace _01.idisposable
         {
             // Chama Dispose() e informa que a chamada
             //foi feita durante o descarte do objeto
-            Descartar(true);
+            Dispose(true);
 
             //Já estamos finalizando manualmente, portanto
             //solicita que o common language runtime não chame o 
@@ -37,23 +36,23 @@ namespace _01.idisposable
             GC.SuppressFinalize(this);
         }
 
-        public virtual void Descartar(bool descartando)
+        public virtual void Dispose(bool disposing)
         {
             // Abandona se o objeto já foi descartado
-            if (descartado)
+            if (disposed)
                 return;
-            if (descartando)
+            if (disposing)
             {
                 // libera objetos gerenciados
             }
             // libera objetos não-gerenciados
-            descartado = true;
+            disposed = true;
         }
 
         ~ResourceHolder()
         {
             // descarta somente objetos não-gerenciados
-            Descartar(false);
+            Dispose(false);
         }
     }
 

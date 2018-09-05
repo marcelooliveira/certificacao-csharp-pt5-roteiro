@@ -9,9 +9,9 @@ namespace _03.Coleta
         {
             await Task.Delay(3000); //aguarda 3 segundos
 
-            await GerarTiposValor();
+            //await GerarTiposValor();
 
-            //await GerarTiposReferencia();
+            await GerarTiposReferencia();
             //Quando são gerados muitos objetos,
             //a imagem abaixo mostra que a quantidade de memória alocada
             //aumenta bastante após 3 segundos, mas se mantém estável, pois
@@ -24,23 +24,23 @@ namespace _03.Coleta
 
         private static async Task GerarTiposValor()
         {
-            for (long i = 0; i < 100000000000; i++)
+            for (long i = 0; i < 100; i++)
             {
-                byte nivelDeAzul = 0xFF; // == System.Byte 
-                int populacao = 1500; // System.Int32 
-                short passageirosVoo = 230; // System.Int16 
-                long populacaoDoBrasil = 207_660_929; // System.Int64 
+                byte nivelDeAzul = 0xFF;
+                int populacao = 1500;
+                short passageirosVoo = 230;
+                long populacaoDoBrasil = 207_660_929;
 
-                sbyte nivelDeBrilho = 127; // System.Sbyte 
-                uint estoque = 1500; // System.UInt32 
-                ushort passageirosNavio = 230; // System.UInt16 
-                ulong populacaoDoMundo = 7_000_000_000; // System.UInt64 
+                sbyte nivelDeBrilho = 127;
+                uint estoque = 1500;
+                ushort passageirosNavio = 230;
+                ulong populacaoDoMundo = 7_000_000_000;
 
-                bool fumante = false; // System.Boolean booleano
-                decimal salario = 5000m; // System.Decimal 
-                double massaDaTerra = 5.9736e24; // System.Double
-                float numeroPI = 3.14159f; // System.Single
-                await Task.Delay(3); //aguarda 3 milissegundos
+                bool fumante = false;
+                decimal salario = 5000m;
+                double massaDaTerra = 5.9736e24;
+                float numeroPI = 3.14159f;
+                await Task.Delay(3);
             }
 
             //a imagem abaixo mostra que a quantidade de memória alocada
@@ -50,9 +50,9 @@ namespace _03.Coleta
 
         private static async Task GerarTiposReferencia()
         {
-            for (long i = 0; i < 100000000000; i++)
+            for (long i = 0; i < 100; i++)
             {
-                Livro l = new Livro();
+                Livro livro = new Livro();
                 await Task.Delay(3); //aguarda 3 milissegundos
             }
         }
@@ -64,21 +64,22 @@ namespace _03.Coleta
 
         ~Livro()
         {
-            //O finalizador é invocado pelo coletor de lixo
+            //    //O finalizador é invocado pelo coletor de lixo
 
-            //Aqui o livro deve ser finalizado
-            Console.WriteLine("Finalizador chamado...");
+            //    //Aqui o livro deve ser finalizado
+            //    Console.WriteLine("Finalizador chamado...");
 
-            //Sabotando o coletor de lixo...
-            //Assim, o número de lixo sem ser coletado se acumula...
+            //    //Sabotando o coletor de lixo...
+            //    //Assim, o número de lixo sem ser coletado se acumula...
 
-            //CUIDADO AO HABILITAR O COMANDO SLEEP ABAIXO!
-            //Thread.Sleep(100);
+            //    //CUIDADO AO HABILITAR O COMANDO SLEEP ABAIXO!
+            //    //Thread.Sleep(100);
 
-            //Note que agora a memória ocupada cresce absurdamente
-            //quando atrasamos a execução do coletor de lixo...
-            //<image url="$(ProjectDir)\img3.png"/>
+            //    //Note que agora a memória ocupada cresce absurdamente
+            //    //quando atrasamos a execução do coletor de lixo...
+            //    //<image url="$(ProjectDir)\img3.png"/>
 
         }
     }
 }
+
