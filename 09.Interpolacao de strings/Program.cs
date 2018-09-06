@@ -54,8 +54,10 @@ namespace _09.Interpolacao_de_strings
 
         public string Telefone { get; set; }
 
+        //public string DadosPessoais =>
+        //         string.Format("Nome: {0}, Endereço: {1}, Telefone: {2}, Data de Nascimento: {3:dd/MM/yyyy}", NomeCompleto, Endereco, Telefone, DataNascimento);
         public string DadosPessoais =>
-                 string.Format("Nome: {0}, Endereço: {1}, Telefone: {2}, Data de Nascimento: {3:dd/MM/yyyy}", NomeCompleto, Endereco, Telefone, DataNascimento);
+                 $"Nome: {NomeCompleto}, Endereço: {Endereco}, Telefone: {Telefone}, Data de Nascimento: {DataNascimento:dd/MM/yyyy}";
 
         public DateTime DataNascimento { get; } = new DateTime(1990, 1, 1);
 
