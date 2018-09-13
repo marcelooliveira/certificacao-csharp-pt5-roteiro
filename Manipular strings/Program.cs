@@ -34,51 +34,35 @@ namespace Manipular_strings
             }
 
             Console.WriteLine();
-            //builder = new StringBuilder();
-            //using (StringWriter writer = new StringWriter(builder))
+
+            //var fileBuilder = new StringBuilder(File.ReadAllText("cadastro.txt"));
+
+            string textoArquivo = File.ReadAllText("cadastro.txt");
+            using (var reader = new StringReader(textoArquivo))
+            {
+                string linha;
+                while ((linha = reader.ReadLine()) != null)
+                {
+                    Console.WriteLine(linha);
+                }
+            }
+
+            Console.Clear();
+
+            //string textoArquivo = File.ReadAllText("cadastro.txt");
+            //using (var reader = new StringReader(textoArquivo))
             //{
-            //    for (int i = 0; i < materias.Length; i++)
+            //    using (var writer = new StringWriter())
             //    {
-            //        string materia = materias[i];
-            //        if (i > 0)
+            //        string linha;
+            //        while ((linha = reader.ReadLine()) != null)
             //        {
-            //            writer.Write(", ");
+            //            //Console.WriteLine(linha);
+            //            writer.WriteLine(linha);
             //        }
-            //        writer.Write(materia);
             //        Console.WriteLine(writer);
             //    }
             //}
-
-
-            XmlDocument doc = new XmlDocument();
-            doc.LoadXml("<livro>" +
-                        "  <titulo>Orientação a Objetos</titulo>" +
-                        "  <preco>69.90</preco>" +
-                        "</livro>");
-
-            XmlNode newElem = doc.CreateNode("element", "autor", "");
-            newElem.InnerText = "Thiago Leite e Carvalho";
-
-            XmlElement root = doc.DocumentElement;
-            root.AppendChild(newElem);
-
-            using (var stringWriter = new StringWriter())
-            using (var xmlTextWriter = XmlWriter.Create(stringWriter))
-            {
-                doc.WriteTo(xmlTextWriter);
-                xmlTextWriter.Flush();
-
-                //using (var stringReader = new StringReader(stringWriter.GetStringBuilder().ToString()))
-                //using (var xmlTextReader = XmlReader.Create(stringReader))
-                //{
-                //    string line;
-                //    while (xmlTextReader.Read() != null)
-                //    {
-
-                //    }
-                //}
-            }
-
 
             Console.ReadKey();
         }

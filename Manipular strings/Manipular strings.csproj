@@ -6,4 +6,14 @@
     <RootNamespace>Manipular_strings</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="cadastro.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="cadastro.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
