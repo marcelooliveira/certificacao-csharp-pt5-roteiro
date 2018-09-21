@@ -3,7 +3,7 @@ criando um método que será usado no jogo. O método inclui o seguinte código.
 (Os números de linha são incluídos apenas para referência.)
 
 ```
-01 public string Formatmoedas(string nome, int moedas)
+01 public string FormatarMoedas(string nome, int moedas)
 02 {
 03
 04 }
