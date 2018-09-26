@@ -13,7 +13,7 @@ B.
 SuppressFinalize()
 
 C.
-collect()
+Collect()
 
 D.
 RemoveMemoryPressure()

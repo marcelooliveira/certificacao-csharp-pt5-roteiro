@@ -1,17 +1,30 @@
 ﻿Você está desenvolvendo um aplicativo usando C#. A aplicação irá produzir
 a string de texto "Primeira linha" seguido da string "Segunda linha".
 Você precisa garantir que uma linha vazia separe as strings de texto.
+
 Quais quatro segmentos de código você deve usar em seqüência? (Para responder, mova o apropriado
 segmentos de código para a área de resposta e organizá-los na ordem correta.
 
 ```
 sb.Append("\1");
+```
+```
 var sb = new StringBuilder();
-sb.Append("First Line");
+```
+```
+sb.Append("Primeira Linha");
+```
+```
 sb.Append("\t");
+```
+```
 sb.AppendLine();
+```
+```
 sb.Append(String.Empty);
-sb.Append("Second Line");
+```
+```
+sb.Append("Segunda Linha");
 ```
 
 Resposta:
@@ -27,7 +40,7 @@ var sb = new StringBuilder();
 
 > Lacuna 2:
 ```
-sb.Append("First Line");
+sb.Append("Primeira Linha");
 > 
 ```
 >
@@ -48,7 +61,7 @@ sb.AppendLine();
 
 > Lacuna 4:
 ```
-sb.Append("Second Line");
+sb.Append("Segunda Linha");
 > 
 ```
 > E no final adicionamos a segunda linha.
